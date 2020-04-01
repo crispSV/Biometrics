@@ -1,1 +1,1 @@
-# Biometrics is a medical sensor + ThingsSpeak data collection and analysis platform
+# Biometrics : NodeMCU + DS18B20 + ThingSpeak medical data analysis

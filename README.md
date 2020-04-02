@@ -3,7 +3,8 @@
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 ### Prerequisites
 
-What things you need to install the software and how to install them
+A NodeMCU 8266 development board
+A Dallas 18B20 temperature sensor
 
 ```
 Give examples
@@ -67,7 +68,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
+* This code is initialy 
 * Inspiration
 * etc
 

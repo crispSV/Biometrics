@@ -37,7 +37,7 @@ Go to ThingSpeak and SignUp. Copy your API Key and WiFi credentials into biometr
 
 * **Chris Papathanasiou** - *Initial work* 
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/crispSV/Biometrics/blob/master/contributors) who participated in this project.
 
 ## License
 

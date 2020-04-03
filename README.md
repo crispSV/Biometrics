@@ -20,10 +20,10 @@ You need to load these libraries to Arduino IDE
 OneWire https://www.arduinolibraries.info/libraries/one-wire
 Dallas https://www.arduinolibraries.info/libraries/dallas-temperature
 
-```
+
 Go to ThingSpeak and SignUp. Copy your API Key and WiFi credentials into biometrics.ino
 
-```
+
 
 
 

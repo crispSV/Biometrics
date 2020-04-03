@@ -1,10 +1,12 @@
-# Biometrics : NodeMCU + DS18B20 + ThingSpeak medical data analysis
+#  NodeMCU + DS18B20 medical data analysis
 ## Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+ An IOT based system for medical data collection and analysis. This application runs on an WiFi connected ESP8266 NodeMCU which gets readings from a Dallas DS18B20 temperature sensor (later on a MELEXIS sensor). Data are uploaded on a constant basis into ThingSpeak (https://thingspeak.com) cloud data analysis service where are processed and dipslayed accordingly.
+ 
 ### Prerequisites
 
 A NodeMCU 8266 development board
 A Dallas 18B20 temperature sensor
+Adruino IDE
 
 ```
 Give examples

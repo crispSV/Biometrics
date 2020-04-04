@@ -102,7 +102,7 @@ float getTemperature() {
   float temp;
   do {
     DS18B20.requestTemperatures(); 
-    temp = DS18B20.getTempCByIndex(0);
+    temp = DS18B20.getTempCByIndex(0);           // Read temperature value from sensor
     delay(100);
   } while (temp == 100.0 || temp == (-127.0));   // Filter temp values of sensor
   Serial.println("Temp received ...");

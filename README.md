@@ -1,6 +1,6 @@
 #  COVIDUS
 
-  IOT based system for medical data collection and analysis. This application runs on an WiFi connected ESP8266 NodeMCU which gets readings from a Dallas DS18B20 temperature sensor (later on a MELEXIS sensor). A lot of sensors can be connected in OneWire bus giving a range of various medical data. These data are uploaded on a constant basis into ThingSpeak (https://thingspeak.com) cloud data analysis service where are processed and displayed accordingly. The software reads also the serial No of the attached devices so to respectfully fill the patient's records in the FrontEnd database.
+  IOT based system for body temperature collection and analysis. This application runs on an WiFi connected ESP8266 NodeMCU which gets readings from a Dallas DS18B20 temperature sensor.  These data are uploaded on a constant basis into ThingSpeak (https://thingspeak.com) cloud data analysis service where are processed and displayed accordingly. The software reads also the serial No of the attached device in case someone wants to use it in a FrontEnd application. In case of use of more sensors, this programm can read the OneWire bus.
   ![image1](Fever_alert.PNG)
 ## Live data for  [ https://crowdhackathon.com/antivirus/ ]
  https://thingspeak.com/channels/1029493

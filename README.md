@@ -2,8 +2,8 @@
 ## 
   IOT based system for medical data collection and analysis. This application runs on an WiFi connected ESP8266 NodeMCU which gets readings from a Dallas DS18B20 temperature sensor (later on a MELEXIS sensor). Many sensors can be connected in OneWire bus giving a range of different medical data. These data are uploaded on a constant basis into ThingSpeak (https://thingspeak.com) cloud data analysis service where are processed and displayed accordingly. The software reads also the serial No of the attached devices so to respectfully fill the patient's records in database.
 ## Live data for  [ https://crowdhackathon.com/antivirus/ ]
-## https://thingspeak.com/channels/1029493
-## http://api.thingspeak.com/channels/1029493/charts/1
+ https://thingspeak.com/channels/1029493
+ http://api.thingspeak.com/channels/1029493/charts/1
 
  
 ### Prerequisites

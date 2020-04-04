@@ -12,8 +12,8 @@
 #include <ESP8266WebServer.h>
 #include <DallasTemperature.h>
 
-#define ONE_WIRE_BUS D1  // Data port
-#define TEMPERATURE_PRECISION 11        // Set sensor precision. 11bit is 0.125 degrees C
+#define ONE_WIRE_BUS D1                 // ESP8266 Data port
+#define TEMPERATURE_PRECISION 11        // Set sensor precision. 11 bit is 0.125 degrees C
 
 
 //ThingSpeak API parameters
@@ -52,24 +52,24 @@ void setup(void){
   Serial.println(WiFi.localIP());
 
   DS18B20.begin();
-  
   Serial.println("Sensor Init");  
- // Grab a count of devices on the wire
+ 
+ // Grab a count of devices on the OneWire bus
   numberOfDevices = DS18B20.getDeviceCount();
   
-  // locate devices on the bus
+ // locate devices on the OneWire bus
   Serial.print("Locating devices...");
   
   Serial.print("Found ");
   Serial.print(numberOfDevices, DEC);
   Serial.println(" devices.");
 
-  // report parasite power requirements
+ // report parasite power requirements
   Serial.print("Parasite power is: "); 
   if (DS18B20.isParasitePowerMode()) Serial.println("ON");
   else Serial.println("OFF");
   
-  // Loop through each device, print out address
+ // Loop through each device, print out address
   for(int i=0;i<numberOfDevices; i++)
   {
     // Search the wire for address
@@ -84,7 +84,7 @@ void setup(void){
     Serial.print("Setting resolution to ");
     Serial.println(TEMPERATURE_PRECISION, DEC);
     
-  // set resolution to TEMPERATURE_PRECISION bit to 11 ( 0.125 degrees C )
+ // set resolution of TEMPERATURE_PRECISION bit to 11 ( 0.125 degrees C )
     DS18B20.setResolution(tempDeviceAddress, TEMPERATURE_PRECISION);
     
     Serial.print("Resolution actually set to: ");
@@ -134,7 +134,7 @@ void loop() {
     Serial.println("connection failed");
     return;
   }
-
+// Send data to ThingSpeak
   client.print(String("GET ") + path + temperatureString + " HTTP/1.1\r\n" +
                "Host: " + host + "\r\n" + 
                "Connection: keep-alive\r\n\r\n");
